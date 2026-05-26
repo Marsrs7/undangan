@@ -1,0 +1,114 @@
+/* Reset margin standar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7fa; /* Warna background luar (terlihat di desktop) */
+    display: flex;
+    justify-content: center; /* Membawa desain ke tengah layar */
+    min-height: 100vh;
+}
+
+/* Kunci tampilan untuk layar HP (Android) */
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 480px; /* Ukuran maksimal layar smartphone standar */
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Efek bayangan */
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 1.1rem;
+    color: #006064;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* ART STYLE UNTUK NAMA */
+.nama-pemilik {
+    font-family: 'Dancing Script', cursive; /* Font latin estetik */
+    font-size: 4rem;
+    color: #00acc1;
+    margin: 15px 0 30px;
+    text-shadow: 2px 2px 4px rgba(0, 172, 193, 0.3); /* Efek glowing/bayangan */
+}
+
+.detail-acara {
+    background-color: #b2ebf2;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    color: #004d40;
+    font-weight: 600;
+}
+
+/* Style Global Tombol UI */
+.btn {
+    display: block;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Style Tombol Google Maps */
+#btn-map {
+    background-color: #ff5252;
+    color: white;
+}
+#btn-map:hover {
+    background-color: #ff1744;
+    transform: translateY(-2px);
+}
+
+/* Buka/Tutup Maps */
+.hidden {
+    display: none;
+}
+#map-container {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #ff5252;
+}
+
+/* Style Tombol RSVP WhatsApp */
+.rsvp-section {
+    border-top: 2px dashed #b2ebf2;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+.rsvp-section h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+.rsvp-section p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+.btn-wa {
+    background-color: #25D366; /* Warna khas WhatsApp */
+    color: white;
+}
+.btn-wa:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+}
